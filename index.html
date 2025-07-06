@@ -9,12 +9,24 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- cdn fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- google font inter  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
@@ -23,11 +35,11 @@
     </style>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="z-1 relative">
     <!-- HEADER  -->
-    <header>
+    <header class="relative z-1">
       <nav
-        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600 w-[80%] mx-auto"
+        class="dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600 w-[80%] mx-auto"
       >
         <div
           class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
@@ -133,10 +145,126 @@
     </header>
 
     <!-- CAROUSEL -->
-    <section></section>
+
+    <section
+      class="relative z-[1] bg-white dark:bg-gray-900 pt-20 sm:px-16 lg:px-24 w-full h-full"
+    >
+      <div class="w-[1280px] mx-auto flex">
+        <div class="w-[1280px] text-left w-[50%] my-40">
+          <h1
+            class="mb-4 text-4xl text-left font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white"
+          >
+            We specialize in UI/UX, Web Development, Digital Marketing.
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            fringilla magna mauris. Nulla fermentum viverra sem eu rhoncus
+            consequat varius nisi quis, posuere magna.
+          </p>
+          <div
+            class="flex flex-col space-y-4 sm:flex-row sm:justify-start sm:space-y-0"
+          >
+            <a
+              href="#"
+              class="inline-flex justify-center items-center py-3 px-7 text-base font-medium text-center text-white rounded-full bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Get started now
+            </a>
+            <div class="pl-4">
+              <span class="flex flex-col">
+                <a class="text-xl font-medium" href="#"
+                  >Call us (0123) 456 – 789</a
+                >
+                <span class="">For any question or concern</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="w-[50%]">
+          <img
+            src="./images/shape-01.svg"
+            alt=""
+            class="absolute z-20 top-[43%] right-[38%]"
+          />
+          <img
+            src="./images/shape-02.svg"
+            alt=""
+            class="absolute z-10 top-[85%] right-[8%]"
+          />
+          <img
+            src="./images/shape-03.svg"
+            alt=""
+            class="absolute z-10 top-[85%] right-[30%]"
+          />
+          <img
+            src="./images/shape-04.svg"
+            alt=""
+            class="absolute top-0 right-0"
+          />
+          <img
+            src="./images/hero.png"
+            alt=""
+            class="absolute z-1 top-0 right-0"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- 24/7 Support Take Ownership Team Work -->
 
     <!-- Why Choose Us -->
+
+    <section class="2xl:ud-py-35 px-16 w-full h-[100%] my-20">
+      <div class="w-[1280px] mx-auto h- flex gap-20">
+        <div class="w-[25%] relative">
+          <img
+            class="absolute -z-1 top-5 left-[-10%]"
+            src="./images/shape-05.svg"
+            alt=""
+          />
+          <img src="./images/about-01.png" class="pb-10" alt="" />
+          <img src="./images/about-02.png" alt="" />
+        </div>
+        <div class="w-[25%] relative">
+          <img class="absolute z-1" src="./images/shape-06.svg" alt="" />
+          <img class="mt-20 pt-10 pb-6" src="./images/about-03.png" alt="" />
+          <img class="" src="./images/shape-07.svg" alt="" />
+        </div>
+        <div class="w-[50%] mt-40 pr-4">
+          <h4 class="text-[20px] font-medium text-blue-700 pb-4">
+            Why Choose Us
+          </h4>
+          <h2 class="text-[40px] font-bold text-black pb-10">
+            We Make Our customers happy by giving Best services.
+          </h2>
+          <span
+            >It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum.</span
+          >
+
+          <div class="flex items-center space-x-4 mt-10">
+            <div class="relative w-14 h-14">
+              <span
+                class="absolute inset-0 rounded-full bg-blue-700 opacity-30 animate-ping"
+              ></span>
+
+              <a
+                data-fancybox
+                href="https://www.youtube.com/watch?v=xcJtL7QggTI"
+                class="relative z-10 flex items-center justify-center w-14 h-14 bg-blue-700 text-white rounded-full"
+              >
+                <img src="./images/icon-play.svg" alt="" />
+              </a>
+            </div>
+
+            <span class="text-black font-medium">SEE HOW WE WORK</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Meet With Our Creative -->
 
@@ -160,5 +288,21 @@
 
     <!-- BackToTop -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Tuỳ chọn (optional)
+        Toolbar: {
+          display: [
+            "close", // nút đóng
+            "fullscreen", // ✅ nút phóng to
+          ],
+        },
+        // Optional: bật tính năng tự động phóng to nếu muốn
+        fullscreen: {
+          autoStart: false,
+        },
+      });
+    </script>
   </body>
 </html>
