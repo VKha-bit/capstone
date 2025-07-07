@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capstone</title>
+  <!-- cdn flowbite  -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <!-- google font inter  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-clifford: #da373d;
+        --text-10: 10px;
+      }
+    </style>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- HEADER  -->
+  <header class="w-full fixed top-0 z-50 bg-white shadow-sm text-gray-400 text-xl">
+    <div class="max-w-screen-xl mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2">
+        <img src="./images/logo-light.svg" alt="Logo" class="h-15" />
+        <span class="text-xl font-semibold text-gray-800"></span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="hidden lg:flex space-x-8 font-normal ">
+        <ul class="flex items-center justify-center gap-8  font-normal ">
+          <li>
+            <a href="#" class="text-blue-600 flex items-center gap-1">
+              Home
+
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-600 flex items-center gap-1">
+              Features
+
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-600 flex items-center gap-1">
+              Pages
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-[2px]" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-600 flex items-center gap-1">
+              Support
+
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!-- Right Section -->
+      <div class="flex items-center space-x-4 ">
+        <!-- Dark Mode Toggle -->
+        <button id="darkModeToggle" class="text-gray-500 hover:text-gray-700 transition">
+          <!-- Sun icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-10 fill-gray-400 dark:block" viewBox="0 0 64 64">
+            <path
+              d="M32 19c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13S24.82 19 32 19zM32 41c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9S27.029 41 32 41zM34 8c0 .366 0 5.634 0 6 0 1.105-.895 2-2 2s-2-.895-2-2c0-.366 0-5.634 0-6 0-1.105.895-2 2-2S34 6.895 34 8zM50.385 16.444c-.259.259-3.984 3.984-4.243 4.243-.781.781-2.047.781-2.828 0-.781-.781-.781-2.047 0-2.828.259-.259 3.984-3.984 4.243-4.243.781-.781 2.047-.781 2.828 0S51.166 15.663 50.385 16.444zM56 34c-.366 0-5.634 0-6 0-1.105 0-2-.895-2-2s.895-2 2-2c.366 0 5.634 0 6 0 1.105 0 2 .895 2 2S57.105 34 56 34zM47.556 50.385c-.259-.259-3.984-3.984-4.243-4.243-.781-.781-.781-2.047 0-2.828s2.047-.781 2.828 0c.259.259 3.984 3.984 4.243 4.243.781.781.781 2.047 0 2.828S48.337 51.166 47.556 50.385zM30 56c0-.366 0-5.634 0-6 0-1.105.895-2 2-2s2 .895 2 2c0 .366 0 5.634 0 6 0 1.105-.895 2-2 2S30 57.105 30 56zM13.615 47.556c.259-.259 3.984-3.984 4.243-4.243.781-.781 2.047-.781 2.828 0 .781.781.781 2.047 0 2.828-.259.259-3.984 3.984-4.243 4.243-.781.781-2.047.781-2.828 0S12.834 48.337 13.615 47.556zM8 30c.366 0 5.634 0 6 0 1.105 0 2 .895 2 2s-.895 2-2 2c-.366 0-5.634 0-6 0-1.105 0-2-.895-2-2S6.895 30 8 30zM16.444 13.615c.259.259 3.984 3.984 4.243 4.243.781.781.781 2.047 0 2.828-.781.781-2.047.781-2.828 0-.259-.259-3.984-3.984-4.243-4.243-.781-.781-.781-2.047 0-2.828S15.663 12.834 16.444 13.615z" />
+          </svg>
+        </button>
+        <!-- Sign In -->
+        <a href="#" class="text-gray-400 hover:text-blue-600 font-normal">Sign In</a>
+        <!-- Sign Up -->
+        <a href="#"
+          class="text-white font-normal px-5 py-2 rounded-full bg-blue-500 shadow-none hover:shadow-lg hover:shadow-blue-500/50 transition duration-300 ease-in-out">
+          Sign Up
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- CAROUSEL -->
+  <section></section>
+  <!-- 24/7 Support Take Ownership Team Work -->
+
+  <!-- Why Choose Us -->
+
+  <!-- Meet With Our Creative -->
+
+  <!-- We Offer The Best Quality Service -->
+
+  <!-- We Offer Great Affordable -->
+
+  <!-- Client’s Testimonials -->
+
+  <!-- COUNT UP  -->
+
+  <!-- Trusted by Global Brands -->
+
+  <!-- Latest Blogs & News -->
+
+  <!-- Let’s Stay Connected| Form -->
+
+  <!-- footer  -->
+
+  <!-- BackToTop -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+
+</html>
