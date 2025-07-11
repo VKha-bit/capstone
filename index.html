@@ -35,24 +35,23 @@
     </style>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="z-1 relative">
+  <body class="z-1 w-full 2xl:mx-auto mx-auto sm:w-[90%] sm:mx-auto">
     <!-- HEADER  -->
-    <header class="relative z-1">
-      <nav
-        class="dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600 w-[80%] mx-auto"
-      >
+
+    <header class="z-1 w-full">
+      <nav class="w-full z-20 top-0 start-0 mx-auto">
         <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6"
+          class="max-w-screen-2xl flex gap-20 items-center justify-between mx-auto p-6"
         >
           <a>
-            <img src="./images/logo-light.svg" class="" />
+            <img src="./images/logo-light.svg" class="sm:w-full" />
           </a>
           <div
             class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
           >
             <button
               type="button"
-              class="text-white cursor-pointer font-medium text-xl px-8 py-2 text-center dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white cursor-pointer font-medium text-xl px-8 py-2 text-center"
             >
               <a href="">Sign In</a>
             </button>
@@ -92,12 +91,12 @@
             id="navbar-sticky"
           >
             <ul
-              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
             >
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-500 bg-blue-600 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                  class="block py-2 px-2 text-gray-500 bg-blue-600 rounded-sm md:bg-transparent md:text-blue-700 md:p-0"
                   aria-current="page"
                   >Home</a
                 >
@@ -105,14 +104,14 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-500 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 px-3 text-gray-700 rounded-sm hover:bg-gray-100 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 md:dark:hover:bg-transparent"
                   >Features</a
                 >
               </li>
               <li class="flex">
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-500 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 px-3 text-gray-500 md:hover:text-blue-700 md:p-0"
                   >Pages
                   <svg
                     class="w-2.5 inline-flex h-3 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-400"
@@ -134,7 +133,7 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-gray-500 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 px-3 text-gray-500 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
                   >Supports</a
                 >
               </li>
@@ -146,13 +145,13 @@
 
     <!-- CAROUSEL -->
 
-    <section
-      class="relative z-[1] bg-white dark:bg-gray-900 pt-20 sm:px-16 lg:px-24 w-full h-full"
-    >
-      <div class="w-[1280px] mx-auto flex">
-        <div class="w-[1280px] text-left w-[50%] my-40">
+    <section class="relative z-[1] bg-white sm:px-16 xl:px-0 w-full h-full">
+      <div class="w-full flex gap-40">
+        <div
+          class="text-left 2xl:w-[50%] 2xl:my-40 2xl:px-20 2xl:ml-20 mx-auto sm:w-full px-20 sm:ml-20"
+        >
           <h1
-            class="mb-4 text-4xl text-left font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white"
+            class="mb-4 text-4xl text-left font-bold tracking-tight leading-none text-gray-900 md:text-5xl mt-20"
           >
             We specialize in UI/UX, Web Development, Digital Marketing.
           </h1>
@@ -182,31 +181,31 @@
             </div>
           </div>
         </div>
-        <div class="w-[50%]">
+        <div class="w-[50%] relative md:w-[50%] sm:w-[50%]">
           <img
-            src="./images/shape-01.svg"
+            src="./images/shape-01.svg "
             alt=""
-            class="absolute z-20 top-[43%] right-[38%]"
+            class="absolute z-20 top-[40%] right-[90%] hidden 2xl:block"
           />
           <img
             src="./images/shape-02.svg"
             alt=""
-            class="absolute z-10 top-[85%] right-[8%]"
+            class="absolute z-10 top-[80%] right-[18%] hidden 2xl:block"
           />
           <img
             src="./images/shape-03.svg"
             alt=""
-            class="absolute z-10 top-[85%] right-[30%]"
+            class="absolute z-10 top-[75%] right-[70%] hidden 2xl:block"
           />
           <img
             src="./images/shape-04.svg"
             alt=""
-            class="absolute top-0 right-0"
+            class="absolute top-0 right-0 hidden sm:block"
           />
           <img
             src="./images/hero.png"
             alt=""
-            class="absolute z-1 top-0 right-0"
+            class="absolute z-1 top-0 right-0 hidden sm:block"
           />
         </div>
       </div>
@@ -216,36 +215,40 @@
 
     <!-- Why Choose Us -->
 
-    <section class="2xl:ud-py-35 px-16 w-full h-[100%] my-20">
-      <div class="w-[1280px] mx-auto h- flex gap-20">
-        <div class="w-[25%] relative">
+    <section
+      class="px-16 max-w-screen-2xl sm:w-full h-[100%] my-20 relative 2xl:mx-auto my-40"
+    >
+      <div
+        class="w-[90%] md:flex-col-1 flex justify-between sm:w-full sm:text-2xl text-3xl"
+      >
+        <div class="w-[20%]">
           <img
-            class="absolute -z-1 top-5 left-[-10%]"
+            class="absolute -z-1 top-5 left-[3%]"
             src="./images/shape-05.svg"
             alt=""
           />
           <img src="./images/about-01.png" class="pb-10" alt="" />
           <img src="./images/about-02.png" alt="" />
         </div>
-        <div class="w-[25%] relative">
+        <div class="w-[20%] relative ml-10 mr-20">
           <img class="absolute z-1" src="./images/shape-06.svg" alt="" />
           <img class="mt-20 pt-10 pb-6" src="./images/about-03.png" alt="" />
           <img class="" src="./images/shape-07.svg" alt="" />
         </div>
-        <div class="w-[50%] mt-40 pr-4">
+        <div class="w-[60%] mt-40 pl-10">
           <h4 class="text-[20px] font-medium text-blue-700 pb-4">
             Why Choose Us
           </h4>
-          <h2 class="text-[40px] font-bold text-black pb-10">
+          <h2 class="text-[40px] font-bold text-black pb-10 pr-40">
             We Make Our customers happy by giving Best services.
           </h2>
-          <span
+          <span class="sm:text-xl"
             >It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum.</span
           >
 
-          <div class="flex items-center space-x-4 mt-10">
+          <div class="flex items-center space-x-4 mt-10 mx-auto">
             <div class="relative w-14 h-14">
               <span
                 class="absolute inset-0 rounded-full bg-blue-700 opacity-30 animate-ping"
@@ -260,7 +263,7 @@
               </a>
             </div>
 
-            <span class="text-black font-medium">SEE HOW WE WORK</span>
+            <span class="text-black font-medium text-sm">SEE HOW WE WORK</span>
           </div>
         </div>
       </div>
@@ -269,8 +272,536 @@
     <!-- Meet With Our Creative -->
 
     <!-- We Offer The Best Quality Service -->
-
+    <section class="max-w-[1440px] h-[100%] my-20 sm:text-3xl 2xl:mx-auto">
+      <div class="sm:w-[1440px]">
+        <h3 class="text-black text-center text-4xl font-bold pb-6">
+          We Offer The Best Quality Service for You
+        </h3>
+        <p
+          class="text-gray-500/80 text-center lg:text-xl sm:text-center sm:px-24 2xl:text-sm"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+          tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in
+          maximus.
+        </p>
+      </div>
+      <div>
+        <div class="grid md:grid-cols-3 sm:w-[1440px]">
+          <div
+            class="p-12 hover:bg-[rgb(255,250,250)] hover:rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out sm:mx-auto"
+          >
+            <img src="./images/icon-04.svg" class="object-cover" alt="" />
+            <h4 class="mt-10 mb-4 text-black text-2xl font-medium">
+              Crafted for Startups
+            </h4>
+            <p class="2xl:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor.
+            </p>
+          </div>
+          <div
+            class="p-12 hover:bg-[rgb(255,250,250)] hover:rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out sm:mx-auto"
+          >
+            <img src="./images/icon-05.svg" alt="" />
+            <h4 class="mt-10 mb-4 text-black text-2xl font-medium">
+              High-quality Design
+            </h4>
+            <p class="2xl:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor.
+            </p>
+          </div>
+          <div
+            class="p-12 hover:bg-[rgb(255,250,250)] hover:rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out sm:mx-auto"
+          >
+            <img src="./images/icon-06.svg" alt="" />
+            <h4 class="mt-10 mb-4 text-black text-2xl font-medium">
+              All Essential Sections
+            </h4>
+            <p class="2xl:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor.
+            </p>
+          </div>
+          <div
+            class="p-12 hover:bg-[rgb(255,250,250)] hover:rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out sm:mx-auto"
+          >
+            <img src="./images/icon-07.svg" alt="" />
+            <h4 class="mt-10 mb-4 text-black text-2xl font-medium">
+              Speed Optimized
+            </h4>
+            <p class="2xl:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor.
+            </p>
+          </div>
+          <div
+            class="p-12 hover:bg-[rgb(255,250,250)] hover:rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out sm:mx-auto"
+          >
+            <img src="./images/icon-05.svg" alt="" />
+            <h4 class="mt-10 mb-4 text-black text-2xl font-medium sm:text-4xl">
+              Fully Customizable
+            </h4>
+            <p class="2xl:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor.
+            </p>
+          </div>
+          <div
+            class="p-12 hover:bg-[rgb(255,250,250)] hover:rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 ease-in-out sm:mx-auto"
+          >
+            <img src="./images/icon-06.svg" alt="" />
+            <h4 class="mt-10 mb-4 text-black text-2xl font-medium">
+              Regular Updates
+            </h4>
+            <p class="2xl:text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              convallis tortor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- We Offer Great Affordable -->
+
+    <section class="w-full">
+      <div>
+        <div class="text-center mx-auto my-20 w-[40%]">
+          <h1 class="text-4xl font-bold py-10 px-20">
+            We Offer Great Affordable Premium Prices.
+          </h1>
+          <p class="px-10">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using.
+          </p>
+        </div>
+
+        <div class="mb-4 border-gray-200 dark:border-gray-700">
+          <ul
+            class="flex flex-wrap justify-center -mb-px text-sm font-medium text-center"
+            id="default-styled-tab"
+            data-tabs-toggle="#default-styled-tab-content"
+            data-tabs-active-classes="text-blue-600 hover:text-blue-600 dark:text-blue-500 dark:hover:text-blue-500 border-blue-600 dark:border-blue-500"
+            data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
+            role="tablist"
+          >
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block px-2 border-x-2 border-y-2 rounded-full"
+                id="profile-styled-tab"
+                data-tabs-target="#styled-profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                ALL
+              </button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block px-2 border-x-2 border-y-2 rounded-full"
+                id="dashboard-styled-tab"
+                data-tabs-target="#styled-dashboard"
+                type="button"
+                role="tab"
+                aria-controls="dashboard"
+                aria-selected="false"
+              >
+                Branding Strategy
+              </button>
+            </li>
+            <li class="me-2" role="presentation">
+              <button
+                class="inline-block px-2 border-x-2 border-y-2 rounded-full"
+                id="settings-styled-tab"
+                data-tabs-target="#styled-settings"
+                type="button"
+                role="tab"
+                aria-controls="settings"
+                aria-selected="false"
+              >
+                Dighital Experiences
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block px-2 border-x-2 border-y-2 rounded-full"
+                id="contacts-styled-tab"
+                data-tabs-target="#styled-contacts"
+                type="button"
+                role="tab"
+                aria-controls="contacts"
+                aria-selected="false"
+              >
+                Ecommerce
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div id="default-styled-tab-content">
+          <div
+            class="hidden p-4 rounded-lg bg-gray-50"
+            id="styled-profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="grid grid-cols-3 grid-rows-3 w-[75%] mx-auto gap-8">
+              <div class="relative group overflow-hidden">
+                <img class="w-full" src="./images/project-01.png" alt="" />
+                <div
+                  class="w-full absolute h-full top-0 right-0 rounded-lg bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                >
+                  <div class="text-center pt-20">
+                    <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                    <p class="py-2">Branded Ecommerce</p>
+                    <a class="" href="">
+                      <svg
+                        class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 14 14"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--hinh2-->
+              <div class="relative group overflow-hidden">
+                <div>
+                  <img class="w-full" src="./images/project-02.png" alt="" />
+                </div>
+                <div>
+                  <div
+                    class="text-center pt-20 absolute w-full h-full top-0 bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                  >
+                    <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                    <p class="py-2">Branded Ecommerce</p>
+                    <a class="" href="">
+                      <svg
+                        class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 14 14"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-span-2">
+                <div class="relative group overflow-hidden">
+                  <div>
+                    <img class="w-full" src="./images/project-04.png" alt="" />
+                  </div>
+                  <div>
+                    <div
+                      class="text-center pt-20 absolute w-full h-full top-0 bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                    >
+                      <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                      <p class="py-2">Branded Ecommerce</p>
+                      <a class="" href="">
+                        <svg
+                          class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 14 14"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-2">
+                <div class="relative group overflow-hidden">
+                  <div>
+                    <img
+                      class="w-full h-full"
+                      src="./images/project-03.png"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div
+                      class="text-center pt-20 absolute w-full h-full top-0 bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                    >
+                      <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                      <p class="py-2">Branded Ecommerce</p>
+                      <a class="" href="">
+                        <svg
+                          class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 14 14"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden p-4 rounded-lg bg-gray-50"
+            id="styled-dashboard"
+            role="tabpanel"
+            aria-labelledby="dashboard-tab"
+          >
+            <div class="grid grid-cols-3 grid-rows-3 w-[75%] mx-auto gap-8">
+              <div class="relative group overflow-hidden">
+                <img class="w-full" src="./images/project-01.png" alt="" />
+                <div
+                  class="w-full absolute h-full top-0 right-0 rounded-lg bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                >
+                  <div class="text-center pt-20">
+                    <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                    <p class="py-2">Branded Ecommerce</p>
+                    <a class="" href="">
+                      <svg
+                        class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 14 14"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-span-2">
+                <div class="relative group overflow-hidden">
+                  <div>
+                    <img class="w-full" src="./images/project-04.png" alt="" />
+                  </div>
+                  <div>
+                    <div
+                      class="text-center pt-20 absolute w-full h-full top-0 bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                    >
+                      <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                      <p class="py-2">Branded Ecommerce</p>
+                      <a class="" href="">
+                        <svg
+                          class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 14 14"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden p-4 rounded-lg bg-gray-50"
+            id="styled-settings"
+            role="tabpanel"
+            aria-labelledby="settings-tab"
+          >
+            <div class="grid grid-cols-3 grid-rows-3 w-[75%] mx-auto gap-8">
+              <!--hinh2-->
+              <div class="relative group overflow-hidden">
+                <div>
+                  <img class="w-full" src="./images/project-02.png" alt="" />
+                </div>
+                <div>
+                  <div
+                    class="text-center pt-20 absolute w-full h-full top-0 bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                  >
+                    <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                    <p class="py-2">Branded Ecommerce</p>
+                    <a class="" href="">
+                      <svg
+                        class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 14 14"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-span-2">
+                <div class="relative group overflow-hidden">
+                  <div>
+                    <img
+                      class="w-full h-full"
+                      src="./images/project-03.png"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div
+                      class="text-center pt-20 absolute w-full h-full top-0 bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                    >
+                      <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                      <p class="py-2">Branded Ecommerce</p>
+                      <a class="" href="">
+                        <svg
+                          class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 14 14"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden p-4 rounded-lg bg-gray-50"
+            id="styled-contacts"
+            role="tabpanel"
+            aria-labelledby="contacts-tab"
+          >
+            <div class="grid grid-cols-3 grid-rows-3 w-[75%] mx-auto gap-8">
+              <div class="relative group overflow-hidden">
+                <img class="w-full" src="./images/project-01.png" alt="" />
+                <div
+                  class="w-full absolute h-full top-0 right-0 rounded-lg bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                >
+                  <div class="text-center pt-20">
+                    <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                    <p class="py-2">Branded Ecommerce</p>
+                    <a class="" href="">
+                      <svg
+                        class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 14 14"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!--hinh2-->
+
+              <div class="row-span-2">
+                <div class="relative group overflow-hidden">
+                  <div>
+                    <img class="w-full" src="./images/project-04.png" alt="" />
+                  </div>
+                  <div>
+                    <div
+                      class="text-center pt-20 absolute w-full h-full top-0 bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                    >
+                      <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                      <p class="py-2">Branded Ecommerce</p>
+                      <a class="" href="">
+                        <svg
+                          class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 14 14"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-2">
+                <div class="relative group overflow-hidden">
+                  <div>
+                    <img
+                      class="w-full h-full"
+                      src="./images/project-03.png"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div
+                      class="text-center pt-20 absolute w-full h-full top-0 bg-blue-600/50 opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"
+                    >
+                      <h1 class="text-xl font-semibold">Photo Retouching</h1>
+                      <p class="py-2">Branded Ecommerce</p>
+                      <a class="" href="">
+                        <svg
+                          class="hover:bg-blue-700 bg-blue-600 text-white text-sm rounded-full p-2 inline-block"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 14 14"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- We Offer Great Affordable -->
 
@@ -285,20 +816,207 @@
     <!-- Let’s Stay Connected| Form -->
 
     <!-- footer  -->
-
+    <footer class="py-12 bg-gray-50 xl:pt-24">
+      <div class="w-full px-4 mx-auto max-w-8xl">
+        <div class="grid gap-12 xl:grid-cols-6 xl:gap-24">
+          <div class="col-span-2">
+            <a href="" class="flex mb-5">
+              <img
+                src="./images/logo-light.svg"
+                class="h-8 mr-3"
+                alt="Flowbite Logo"
+              />
+            </a>
+            <p class="max-w-lg mb-3 text-gray-400 text-xl">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p class="max-w-lg text-gray-600 text-gray-400">
+              <a href="" class="text-blue-600 dark:text-blue-500" rel="nofollow"
+                ><i class="fa-brands fa-square-twitter fa-2x"></i
+              ></a>
+              <a href="" class="text-blue-600 dark:text-blue-500" rel="nofollow"
+                ><i class="fa-brands fa-facebook fa-2x"></i
+              ></a>
+              <a href="" class="text-blue-600 dark:text-blue-500" rel="nofollow"
+                ><i class="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+              <a href="" class="text-blue-600 dark:text-blue-500" rel="nofollow"
+                ><i class="fa-brands fa-free-code-camp fa-2x"></i>
+              </a>
+            </p>
+          </div>
+          <div>
+            <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase">
+              Quick Links
+            </h3>
+            <ul>
+              <li class="mb-4">
+                <a
+                  href="https://flowbite.com/"
+                  class="font-medium text-gray-400 hover:text-blue-500"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://flowbite.com/blocks/"
+                  class="font-medium text-gray-400 hover:text-blue-500"
+                  >Product</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://flowbite.com/figma/"
+                  class="font-medium text-gray-400 hover:text-blue-500"
+                  >Careers</a
+                >
+                <span
+                  class="bg-green-500 text-white text-xs font-medium px-2.5 py-0.5 rounded-xl ml-2"
+                >
+                  Hiring
+                </span>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://flowbite.com/icons/"
+                  class="font-medium text-gray-400 hover:text-blue-500"
+                  >Pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase">
+              Services
+            </h3>
+            <ul>
+              <li class="mb-4">
+                <a
+                  href="https://flowbite.com/contact/"
+                  rel="noreferrer nofollow"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                  >Web Development</a
+                >
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://github.com/themesberg/flowbite/discussions"
+                  rel="noreferrer nofollow"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                  >Graphics Design</a
+                >
+              </li>
+              <li class="mb-4 flex items-center">
+                <a
+                  href="https://flowbite.com/work-with-us/"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                >
+                  Digital Marketing
+                </a>
+              </li>
+              <li class="mb-4 flex items-center">
+                <a
+                  href="https://flowbite.com/work-with-us/"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                >
+                  Ui/Ux Design
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase">
+              Support
+            </h3>
+            <ul>
+              <li class="mb-4">
+                <a
+                  href="https://discord.gg/4eeurUVvTy"
+                  rel="noreferrer nofollow"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                  >Company
+                </a>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://github.com/themesberg/flowbite"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                  >Press media
+                </a>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://twitter.com/zoltanszogyenyi"
+                  rel="noreferrer nofollow"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                  >Our Blog
+                </a>
+              </li>
+              <li class="mb-4">
+                <a
+                  href="https://www.linkedin.com/in/zoltanszogyenyi/"
+                  rel="noreferrer nofollow"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="mb-6 text-sm font-semibold text-gray-400 uppercase">
+              Newsletter
+            </h3>
+            <ul>
+              <li class="mb-4">
+                <a
+                  href="https://flowbite.com/license/"
+                  class="font-medium text-gray-600 dark:text-gray-400 hover:text-blue-500"
+                  >Subscribe to receive future updates</a
+                >
+              </li>
+              <li
+                class="flex justify-between border rounded-xl text-center w-60 h-10 px-4 hover:text-blue-500"
+              >
+                <input class="" type="email" placeholder="Email address" />
+                <a class="" href=""
+                  ><svg
+                    class="pt-2"
+                    height="28"
+                    viewBox="0 0 48 48"
+                    width="30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M4.02 42l41.98-18-41.98-18-.02 14 30 4-30 4z" />
+                    <path d="M0 0h48v48h-48z" fill="none" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-8 border-gray-200 dark:border-gray-700 lg:my-12" />
+      </div>
+      <div class="flex justify-between w-[75%] mx-auto">
+        <ul class="flex gap-8 text-gray-400 text-xl">
+          <li><a href="">English</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+        <span class="block text-center text-gray-600 dark:text-gray-400 font-"
+          ><span id="currentYear"></span> <a href="https://flowbite.com/"></a> ©
+          2025 Base. All rights reserved
+        </span>
+      </div>
+    </footer>
     <!-- BackToTop -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
       Fancybox.bind("[data-fancybox]", {
-        // Tuỳ chọn (optional)
         Toolbar: {
-          display: [
-            "close", // nút đóng
-            "fullscreen", // ✅ nút phóng to
-          ],
+          display: ["close", "fullscreen"],
         },
-        // Optional: bật tính năng tự động phóng to nếu muốn
+
         fullscreen: {
           autoStart: false,
         },

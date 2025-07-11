@@ -1,0 +1,16 @@
+/* @media (max-width: 500px) {
+  .reponsiveh {
+    font-size: 90px;
+    margin: 0 20px;
+    width: auto;
+  }
+} */
+header {
+  position: fixed;
+  /* background-color: white; */
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease-out 0s;
+}
